@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Drawing Graph</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="topPane" class="pane">
+            <div style="text-align: center;">Select a function:</div>
+            <div id="formulae" style="margin-top: 15px;">
+                <span>
+                    <input type="radio" name="function" id="radio_x2" value="x2" checked />
+                    <label for="radio_x2">y(x)=x<sup>2</sup></label>
+                </span>
+
+                <span>
+                    <input type="radio" name="function" id="radio_x3" value="x3" />
+                    <label for="radio_x3">y(x)=x<sup>3</sup></label>
+                </span>
+
+                <span>
+                    <input type="radio" name="function" id="radio_sin" value="sin" />
+                    <label for="radio_sin">y(x)=sin(x)</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="function" id="radio_cos" value="cos" />
+                    <label for="radio_cos">y(x)=cos(x)</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="function" id="radio_tg" value="tg" />
+                    <label for="radio_tg">y(x)=tg(x)</label>
+                </span>
+            </div>
+        </div>
+        <div id="bottomPane" class="pane">
+            <canvas id="canvas"></canvas>
+        </div>
+        <script src="drawing.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
