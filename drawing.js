@@ -6,7 +6,7 @@ class Drawing {
 
         this.focusX = 0;
         this.focusY = 0;
-        this.scale = 1;
+        this.scale = 100;
 
         this.displayWidth = 500;
         this.displayHeight = 500;
@@ -96,7 +96,7 @@ class Drawing {
         let yBeforeZoom = this.#transformPixelsToMM_Y(y);
 
         this.scale *= scale;
-        this.scale = Math.min(Math.max(0.01, this.scale), 100);
+        this.scale = Math.min(Math.max(0.01, this.scale), 500);
 
         let xAfterZoom = this.#transformPixelsToMM_X(x);
         let yAfterZoom = this.#transformPixelsToMM_Y(y);
